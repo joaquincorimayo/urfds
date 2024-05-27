@@ -1,3 +1,6 @@
+use polars::prelude::DataFrame;
+
 fn main() {
-    println!("Hello, world!");
+    let df = DataFrame::default();
+    assert!(df.is_empty());
 }
